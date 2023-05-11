@@ -1,35 +1,74 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+  Route,
+} from 'react-router-dom';
+import Layout from '../components/Layout';
+import Home from '../pages/Home';
+import About from '../pages/About';
+import Shows from '../pages/Shows';
+import Music from '../pages/Music';
 
-function App() {
-  const [count, setCount] = useState(0)
 
+
+
+const router = createBrowserRouter(createRoutesFromElements(
+  <Route path='/' element={<Layout />}>
+    <Route index element={<Home />} />
+    <Route
+      path='about'
+      element={<About />}
+    />
+    <Route
+      path="shows"
+      element={<Shows />}
+    />
+    <Route
+      path='music'
+      element={<Music />}
+      errorElement={<Error />}
+    /> 
+
+    {/* <Route element={<AuthRequired />}>
+      <Route path='host' element={<HostLayout />} >
+        <Route
+          index
+          element={<HostDashboard />}
+          loader={dashboardLoader}
+        />
+        <Route path='income' element={<Income />} />
+        <Route path='reviews' element={<Reviews />} />
+        <Route
+          path='vans'
+          element={<HostVans />}
+          loader={hostVansLoader}
+          errorElement={<Error />}
+        />
+
+        <Route
+          path='vans/:id'
+          element={<HostVanDetails />}
+          loader={hostVanDetailLoader}
+          errorElement={<Error />}
+        >
+          <Route index element={<HostVanInfo />} />
+          <Route path="pricing" element={<HostVanPricing />} />
+          <Route path="photos" element={<HostVanPhotos />} />
+        </Route>
+      </Route>
+
+    </Route> */}
+
+    {/* <Route path="*" element={<NotFound />} /> */}
+  </Route>
+
+
+))
+
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <RouterProvider router={router} />
   )
 }
 
-export default App
