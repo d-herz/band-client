@@ -19,7 +19,10 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route
       path='about'
       element={<About />}
-    />
+    >
+
+
+    </Route>
     <Route
       path="shows"
       element={<Shows />}

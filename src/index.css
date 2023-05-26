@@ -104,9 +104,48 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* HOME PAGE */
+.home-container {
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+    url("./assets/images/home-hero.png") no-repeat center center; */
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  min-height: 350px;
+  color: white;
+  padding: 45px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-container h1 {
+  font-family: "Luckiest Guy";
+  /* font-size: 2.25rem; */
+  margin: 1rem 0 0 0;
+}
+
+.home-container h2 {
+  font-family: "Luckiest Guy";
+  /* font-size: 2.25rem; */
+  margin-top: 0;
+}
+
+.home-container span {
+  /* font-family: "Luckiest Guy"; */
+  font-style: italic;
+}
+
 /*** ABOUT PAGE ***/
-.about-hero-image {
-  max-width: 100%;
+
+.about-page-container {
+  min-height: 350px;
+  color: white;
+  padding: 45px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-page-content {
@@ -117,10 +156,13 @@ button:focus-visible {
 
 .about-page-content h1 {
   line-height: 38px;
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 1rem 0 0 0;
 }
 
 .about-page-content p {
-  line-height: 22px;
+  font-family: 'Exo 2', sans-serif;
 }
 
 .about-page-cta {
