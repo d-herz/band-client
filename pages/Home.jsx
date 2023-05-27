@@ -14,7 +14,7 @@ function Home() {
       <p>
         Add adventure to your life by joining the #BrainSlug movement. 
       </p>
-      <Link to="vans">Find your van</Link>
+      <Link to="shows">Show Schedule!</Link>
     </div>
     
   )

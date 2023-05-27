@@ -9,9 +9,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Shows from '../pages/Shows';
 import Music from '../pages/Music';
-
-
-
+import Contact from '../pages/Contact';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
@@ -32,6 +30,11 @@ const router = createBrowserRouter(createRoutesFromElements(
       element={<Music />}
       errorElement={<Error />}
     /> 
+
+    <Route
+      path="contact"
+      element={<Contact />}
+    />
 
     {/* <Route element={<AuthRequired />}>
       <Route path='host' element={<HostLayout />} >

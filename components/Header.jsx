@@ -25,11 +25,26 @@ function Header() {
         >
           About
         </NavLink>
+
+        <NavLink
+          to="/music"
+          style={({ isActive }) => isActive ? activeStyle : null}
+        >
+          Music
+        </NavLink>  
+
         <NavLink
           to="/shows"
           style={ ({isActive}) => isActive ? activeStyle : null }
         >
           Shows
+        </NavLink>
+
+        <NavLink
+          to="/contact"
+          style={({ isActive }) => isActive ? activeStyle : null}
+        >
+          Contact
         </NavLink>
       </nav>
     </header>
