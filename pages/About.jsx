@@ -1,7 +1,37 @@
 import React from 'react'
+import BandMemberCard from '../components/BandMemberCard'
 import { Link } from 'react-router-dom'
 
 function About() {
+
+  const bandMembers = [
+    {
+      name: 'Eric',
+      role: 'Lead Vocals/Rhythm Guitar',
+      bio: 'Eric rules!',
+      image: '/images/slug1.webp',
+    },
+    {
+      name: 'Wes',
+      role: 'Lead Guitar/Backing Vocals',
+      bio: 'Wes rules!',
+      image: '/images/slug2.webp',
+    },
+    {
+      name: 'Dan',
+      role: 'Bass guitar/Backing Vocals',
+      bio: 'Dan rules!',
+      image: '/images/slug3.webp',
+    },
+    {
+      name: 'TBD',
+      role: 'Drums',
+      bio: 'We need a drummer!',
+      image: '/images/slug3.webp',
+    },
+
+  ]
+
   return (
     <div className="about-page-container">
 
@@ -22,8 +52,19 @@ function About() {
 
       </div>
 
-      <div>
+      <div className='about-member-container'>
         <h3>MEMBERS</h3>
+        <div className="member-card-container">
+          {bandMembers.map((member, index) => (
+            <BandMemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              bio={member.bio}
+              image={member.image}
+            />
+          ))}
+        </div>
 
       </div>
       <div className="about-page-content">

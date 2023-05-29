@@ -127,8 +127,13 @@ button:focus-visible {
 }
 
 .home-container span {
-  /* font-family: "Luckiest Guy"; */
+  font-family: "Exo 2";
   font-style: italic;
+}
+
+.home-container p {
+  font-family: "Exo 2";
+  font-weight: bold;
 }
 
 /*** ABOUT PAGE ***/
@@ -159,24 +164,53 @@ button:focus-visible {
   text-align: justify;
 }
 
-.about-page-cta {
-  background-color: #ffcc8d;
-  color: #161616;
-  padding-inline: 32px;
-  padding-bottom: 32px;
-  margin-inline: 27px;
-  border-radius: 5px;
+.about-member-container h3 {
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 0;
 }
 
-.about-page-cta h2 {
+.member-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+  justify-content: center;
+}
+
+.band-member-card {
+  background-color: #727272;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 0.75rem;
+}
+
+.band-member-image {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.band-member-details {
+  margin-top: 10px;
+}
+
+.band-member-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Luckiest Guy';
+  margin: 0.5rem;
+}
+
+.band-member-role {
+  font-family: 'Exo 2';
+  font-size: 1rem;
+  color: #000000;
   margin: 0;
-  padding-block: 37px;
 }
 
-.about-page-cta .link-button {
-  background-color: #161616;
-  color: white;
-  border-radius: 10px;
+.band-member-bio {
+  font-size: 0.9rem;
 }
 
 /* SHOW SCHEDULE */

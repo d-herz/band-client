@@ -12,9 +12,9 @@ function Home() {
       </span>
 
       <p>
-        Add adventure to your life by joining the #BrainSlug movement. 
+        Add adventure to your life by joining the #BrainSlug movement 
       </p>
-      <Link to="shows">Show Schedule!</Link>
+      <Link to="shows">Upcoming Shows</Link>
     </div>
     
   )
