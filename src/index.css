@@ -188,6 +188,7 @@ button:focus-visible {
 .band-member-image {
   width: 100%;
   max-width: 200px;
+  max-height: 120px;
   border-radius: 50%;
 }
 
