@@ -22,7 +22,7 @@ function Schedule() {
       date: 'July 7th, 2023',
       venue: 'Madison Square Garden',
       location: 'New York City, NY',
-      openingActs: ['Nofx', 'The Offspring'],
+      openingActs: ['NoFx', 'The Offspring'],
       soldOut: true,
     },
     // Add more show objects as needed

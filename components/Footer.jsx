@@ -11,7 +11,7 @@ function Footer() {
            &#169; 2023 
         </span>
       </p>
-      <h5><a href="https://webdevdan.com/">WebDevDan.com</a></h5>
+      {/* <h5><a href="https://webdevdan.com/">WebDevDan.com</a></h5> */}
     </footer>
   )
 }

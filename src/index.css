@@ -218,7 +218,7 @@ button:focus-visible {
 .show-page-container {
   min-height: 350px;
   color: white;
-  padding: 45px 45px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,6 +229,10 @@ button:focus-visible {
   text-align: center;
   font-family: "Luckiest Guy";
   margin: 1rem 0 0 0;
+}
+
+.show-page-content ul {
+  margin-top: 1.5rem;
 }
 
 .show-page-content li {
