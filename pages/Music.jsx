@@ -2,7 +2,20 @@ import React from 'react'
 
 function Music() {
   return (
-    <div>Music</div>
+    <div className="show-page-container">
+
+      <div className="show-page-content">
+        
+
+
+      </div>
+
+      <div className="about-page-content">
+        <h2>
+
+        </h2>
+      </div>
+    </div>
   )
 }
 

@@ -19,7 +19,7 @@ function About() {
     },
     {
       name: 'Dan',
-      role: 'Bass guitar/Backing Vocals',
+      role: 'Bass Guitar/Backing Vocals',
       bio: 'Dan rules!',
       image: '/images/slug3.webp',
     },
