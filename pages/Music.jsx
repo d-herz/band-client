@@ -5,7 +5,8 @@ function Music() {
     <div className="show-page-container">
 
       <div className="show-page-content">
-        <h3>Streaming Platforms</h3>
+        {/* <h2>Streaming Platforms</h2> */}
+        <h3>Check out Brain Slug on the following platforms:</h3>
         <ul>
           <li>
             <a target="_blank" href="https://music.apple.com/us/artist/brain-slug/1650056054">Apple Music</a>

@@ -214,6 +214,9 @@ button:focus-visible {
   font-size: 0.9rem;
 }
 
+/* Music Page */
+
+
 /* SHOW SCHEDULE */
 .show-page-container {
   min-height: 350px;
@@ -230,12 +233,37 @@ button:focus-visible {
   font-family: "Luckiest Guy";
   margin: 1rem 0 0 0;
 }
+.show-page-content h3 {
+  line-height: 38px;
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 1rem 0 0 0;
+}
 
 .show-page-content ul {
   margin-top: 1.5rem;
+  text-align: center;
 }
 
 .show-page-content li {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+.show-page-content a {
+  color: white;
+  text-decoration: underline;
+  margin: 1rem;
+}
+.show-page-content a:hover {
+  color: #535bf2;
+  font-size: 18px;
+  text-decoration: underline;
+  margin: 1rem;
+}
+.show-page-content a:active {
+  color: #535bf2;
+  text-decoration: underline;
   margin: 1rem;
 }
 
