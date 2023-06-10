@@ -104,37 +104,48 @@ button:focus-visible {
 }
 
 /* HOME PAGE */
-.home-container {
-  min-height: 350px;
+.home-container-hero {
+  min-height: 450px;
+  color: white;
+  padding: 45px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../public/images/gig-concert-show-music.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.home-container-hero h1 {
+  font-family: "Luckiest Guy";
+  /* font-size: 2.25rem; */
+  margin: 1rem 0 0 0;
+}
+.home-container-main {
   color: white;
   padding: 45px 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.home-container h1 {
-  font-family: "Luckiest Guy";
-  /* font-size: 2.25rem; */
-  margin: 1rem 0 0 0;
-}
-
-.home-container h2 {
+.home-container-main h2 {
   font-family: "Luckiest Guy";
   font-size: 1.25rem;
   margin-top: 0;
   text-align: center;
 }
 
-.home-container span {
+.home-container-main span {
   font-family: "Exo 2";
   font-style: italic;
 }
 
-.home-container p {
+.home-container-main p {
   font-family: "Exo 2";
   font-weight: bold;
 }
+
 
 /*** ABOUT PAGE ***/
 .about-page-container {
