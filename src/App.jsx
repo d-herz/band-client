@@ -19,7 +19,6 @@ const router = createBrowserRouter(createRoutesFromElements(
       element={<About />}
     >
 
-
     </Route>
     <Route
       path="shows"
@@ -35,8 +34,6 @@ const router = createBrowserRouter(createRoutesFromElements(
       path="contact"
       element={<Contact />}
     />
-
-    
 
     {/* <Route path="*" element={<NotFound />} /> */}
   </Route>
