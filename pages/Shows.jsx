@@ -13,9 +13,9 @@ function Schedule() {
     },
     {
       date: 'June 30, 2023',
-      venue: 'The Greek Theater',
-      location: 'Los Angeles, CA',
-      openingActs: ['Blink 182'],
+      venue: 'La Salle Market',
+      location: 'Collinsville, CT',
+      openingActs: ['TBD'],
       soldOut: true,
     },
     {
@@ -47,7 +47,6 @@ function Schedule() {
           ))}
         </ul>
        
-
       </div>
 
       <div className="about-page-content">

@@ -17,7 +17,6 @@ function Music() {
           
         </ul>
 
-
       </div>
 
       <div className="about-page-content">
