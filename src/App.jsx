@@ -36,35 +36,7 @@ const router = createBrowserRouter(createRoutesFromElements(
       element={<Contact />}
     />
 
-    {/* <Route element={<AuthRequired />}>
-      <Route path='host' element={<HostLayout />} >
-        <Route
-          index
-          element={<HostDashboard />}
-          loader={dashboardLoader}
-        />
-        <Route path='income' element={<Income />} />
-        <Route path='reviews' element={<Reviews />} />
-        <Route
-          path='vans'
-          element={<HostVans />}
-          loader={hostVansLoader}
-          errorElement={<Error />}
-        />
-
-        <Route
-          path='vans/:id'
-          element={<HostVanDetails />}
-          loader={hostVanDetailLoader}
-          errorElement={<Error />}
-        >
-          <Route index element={<HostVanInfo />} />
-          <Route path="pricing" element={<HostVanPricing />} />
-          <Route path="photos" element={<HostVanPhotos />} />
-        </Route>
-      </Route>
-
-    </Route> */}
+    
 
     {/* <Route path="*" element={<NotFound />} /> */}
   </Route>
